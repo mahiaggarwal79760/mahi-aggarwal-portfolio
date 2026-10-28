@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahi Aggarwal | BTech Student & Developer</title>
+<meta name="description" content="Portfolio of Mahi Aggarwal, a BTech student building for the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">mahi<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="btn small">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>Mahi <span class="grad">Aggarwal</span></h1>
+    <p class="typed">BTech Student &middot; <span id="typed"></span><span class="caret">|</span></p>
+    <p class="lead">I turn curiosity into clean, fast and playful web experiences.</p>
+    <div class="cta">
+      <a href="#projects" class="btn">View my work</a>
+      <a href="#contact" class="btn ghost">Get in touch</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap about">
+    <div class="reveal photo">
+      <img src="https://picsum.photos/seed/mahi-portrait/600/700" alt="Portrait placeholder" loading="lazy" width="600" height="700">
+    </div>
+    <div class="reveal" style="--d:.15s">
+      <h2>About <span class="grad">me</span></h2>
+      <p>I'm a BTech student who loves building things for the web and learning how software works under the hood. I enjoy turning ideas into polished interfaces and solving problems with code.</p>
+      <p>When I'm not studying, I'm exploring new tools, working on side projects and sharpening my problem-solving skills.</p>
+      <div class="stats">
+        <div><b data-count="12">0</b><small>Projects</small></div>
+        <div><b data-count="5">0</b><small>Languages</small></div>
+        <div><b data-count="300">0</b><small>Commits</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section alt">
+  <div class="wrap">
+    <h2 class="reveal center">My <span class="grad">toolkit</span></h2>
+    <div class="skills">
+      <div class="skill reveal"><h3>HTML &amp; CSS</h3><div class="bar"><i style="--w:90%"></i></div></div>
+      <div class="skill reveal" style="--d:.08s"><h3>JavaScript</h3><div class="bar"><i style="--w:80%"></i></div></div>
+      <div class="skill reveal" style="--d:.16s"><h3>Python</h3><div class="bar"><i style="--w:75%"></i></div></div>
+      <div class="skill reveal" style="--d:.24s"><h3>C / C++</h3><div class="bar"><i style="--w:70%"></i></div></div>
+      <div class="skill reveal" style="--d:.32s"><h3>Git &amp; GitHub</h3><div class="bar"><i style="--w:78%"></i></div></div>
+      <div class="skill reveal" style="--d:.4s"><h3>Three.js</h3><div class="bar"><i style="--w:55%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="wrap">
+    <h2 class="reveal center">Selected <span class="grad">projects</span></h2>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="https://picsum.photos/seed/project-one/800/500" alt="Project one preview" loading="lazy" width="800" height="500">
+        <div class="card-body"><h3>Campus Connect</h3><p>A student hub for events, notes and club updates.</p><span class="tag">HTML</span><span class="tag">JS</span></div>
+      </article>
+      <article class="card reveal" style="--d:.12s">
+        <img src="https://picsum.photos/seed/project-two/800/500" alt="Project two preview" loading="lazy" width="800" height="500">
+        <div class="card-body"><h3>Study Planner</h3><p>Smart timetable and deadline tracker with reminders.</p><span class="tag">Python</span><span class="tag">SQL</span></div>
+      </article>
+      <article class="card reveal" style="--d:.24s">
+        <img src="https://picsum.photos/seed/project-three/800/500" alt="Project three preview" loading="lazy" width="800" height="500">
+        <div class="card-body"><h3>Galaxy Viewer</h3><p>Interactive 3D particle playground built with Three.js.</p><span class="tag">Three.js</span><span class="tag">CSS</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="wrap center reveal">
+    <h2>Let's <span class="grad">connect</span></h2>
+    <p class="lead">Open to internships, collaborations and good conversations.</p>
+    <a class="btn big" href="mailto:mahiaggarwal79760@gmail.com">mahiaggarwal79760@gmail.com</a>
+    <p class="social"><a href="https://github.com/mahiaggarwal79760" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</section>
+</main>
+
+<footer><p>&copy; <span id="year"></span> Mahi Aggarwal. Built with HTML, CSS &amp; JS.</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
